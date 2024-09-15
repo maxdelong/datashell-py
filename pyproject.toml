@@ -5,6 +5,9 @@ description = "Experimenting with using a CLI and YAML for data processing."
 authors = ["Max DeLong <95108037+maxdelong@users.noreply.github.com>"]
 license = "MIT"
 readme = "README.md"
+packages = [
+    { include = "datashell-py", from = "src" }
+]
 
 [tool.poetry.dependencies]
 python = "^3.12"

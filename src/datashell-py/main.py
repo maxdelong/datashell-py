@@ -3,7 +3,7 @@ import typer
 from pathlib import Path
 import time
 
-from metadata_reader import get_file_metadata
+from lib.metadata_reader import get_file_metadata
 
 # yaml_test = "../datashell-py/src/data/test.yaml"
 

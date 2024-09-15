@@ -1,7 +1,7 @@
 file_type: Parquet
 num_columns: 24
 num_rows: 1296675
-schema: "<pyarrow._parquet.ParquetSchema object at 0x0000026649648740>\nrequired group\
+schema: "<pyarrow._parquet.ParquetSchema object at 0x00000189690362C0>\nrequired group\
   \ field_id=-1 root {\n  optional int64 field_id=-1 Unnamed: 0;\n  optional binary\
   \ field_id=-1 trans_date_trans_time (String);\n  optional int64 field_id=-1 cc_num;\n\
   \  optional binary field_id=-1 merchant (String);\n  optional binary field_id=-1\
