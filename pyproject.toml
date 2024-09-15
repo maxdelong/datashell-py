@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "datashell-py"
+version = "0.1.0"
+description = "Experimenting with using a CLI and YAML for data processing."
+authors = ["Max DeLong <95108037+maxdelong@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.2"
+polars = "^1.7.1"
+delta = "^0.4.2"
+numpy = "^2.1.1"
+pyyaml = "^6.0.2"
+typer-cli = "^0.12.5"
+pyarrow = "^17.0.0"
+ipykernel = "^6.29.5"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

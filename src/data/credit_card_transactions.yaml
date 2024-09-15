@@ -1,0 +1,18 @@
+file_type: Parquet
+num_columns: 24
+num_rows: 1296675
+schema: "<pyarrow._parquet.ParquetSchema object at 0x0000026649648740>\nrequired group\
+  \ field_id=-1 root {\n  optional int64 field_id=-1 Unnamed: 0;\n  optional binary\
+  \ field_id=-1 trans_date_trans_time (String);\n  optional int64 field_id=-1 cc_num;\n\
+  \  optional binary field_id=-1 merchant (String);\n  optional binary field_id=-1\
+  \ category (String);\n  optional double field_id=-1 amt;\n  optional binary field_id=-1\
+  \ first (String);\n  optional binary field_id=-1 last (String);\n  optional binary\
+  \ field_id=-1 gender (String);\n  optional binary field_id=-1 street (String);\n\
+  \  optional binary field_id=-1 city (String);\n  optional binary field_id=-1 state\
+  \ (String);\n  optional int64 field_id=-1 zip;\n  optional double field_id=-1 lat;\n\
+  \  optional double field_id=-1 long;\n  optional int64 field_id=-1 city_pop;\n \
+  \ optional binary field_id=-1 job (String);\n  optional binary field_id=-1 dob (String);\n\
+  \  optional binary field_id=-1 trans_num (String);\n  optional int64 field_id=-1\
+  \ unix_time;\n  optional double field_id=-1 merch_lat;\n  optional double field_id=-1\
+  \ merch_long;\n  optional int64 field_id=-1 is_fraud;\n  optional int64 field_id=-1\
+  \ merch_zipcode;\n}\n"

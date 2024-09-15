@@ -1,0 +1,7 @@
+name: test
+job: software engineer program
+languages:
+- python
+- assembly
+- c++
+- c
