@@ -1,6 +1,5 @@
 from pathlib import Path
 import polars as pl
-import pyarrow.parquet as pq
 
 def get_file_metadata(file_path):
     file_path = Path(file_path)
@@ -39,11 +38,18 @@ def get_csv_metadata(file_path):
 
 
 def get_parquet_metadata(file_path):
-    """Extract metadata from a Parquet file using PyArrow."""
-    parquet_file = pq.ParquetFile(file_path)
+    """Extract metadata from a Parquet file using Polars."""
+    df = pl.read_parquet(file_path)
+    
+    # Get the shape
+    df_shape = df.shape
+    
+    # Get the column names
+    column_names = df.columns
+    
     return {
         'file_type': 'Parquet',
-        'num_rows': parquet_file.metadata.num_rows,
-        'num_columns': parquet_file.metadata.num_columns,
-        'schema': str(parquet_file.schema)
+        'num_rows': df_shape[0],
+        'num_columns': df_shape[1],
+        'column_names': column_names
     }
